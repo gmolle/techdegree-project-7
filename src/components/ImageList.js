@@ -1,9 +1,11 @@
 import React from 'react';
 
+// Component imports
 import Image from './Image';
 import NoResults from './NoResults';
 import Loading from './Loading';
 
+// Renders the Image, Loading, or NoResults component
 const ImageList = (props) => {
   const results = props.images;
   let images;

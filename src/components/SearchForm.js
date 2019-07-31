@@ -1,14 +1,18 @@
 import React, { Component } from 'react'
 
+
+// Search component
 class SearchForm extends Component {
   state = {
     searchText: ''
   }
 
+  // Gets the teaxt out of the search field
   onSearchChange = e => {
     this.setState({ searchText: e.target.value });
   }
 
+  // Function called when form is submitted
   handleSubmit = e => {
     e.preventDefault();
     let searchText = this.query.value.toLowerCase();

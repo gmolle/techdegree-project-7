@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 
+// Allows the 3 nav buttons to function
 const Nav = () => {
   return (
     <nav className="main-nav">

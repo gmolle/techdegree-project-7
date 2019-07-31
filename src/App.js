@@ -13,6 +13,7 @@ import Error from "./components/Error";
 
 class App extends Component {
 
+  // State for the images and loading
   state = {
     searchImg: [],
     pizzaImg: [],
@@ -21,12 +22,14 @@ class App extends Component {
     loading: true
   };
 
+  // Calls the search function when the images mount into the DOM
   componentDidMount() {
     this.performSearch('pizza');
     this.performSearch('dog');
     this.performSearch('lizard');
   }
 
+  // Search function with axios
   performSearch = (query) => {
     this.setState({ loading: true });
     axios.get(`https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apiKey}&tags=${query}&per_page=24&format=json&nojsoncallback=1`)

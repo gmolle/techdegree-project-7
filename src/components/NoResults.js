@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Shows if there are no results for the search
 const NoResults = () => {
   return (
     <div className="noResults">
